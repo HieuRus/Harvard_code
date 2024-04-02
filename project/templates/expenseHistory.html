@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Expense History
+{% endblock %}
+
+{% block main %}
+        <div class="sessionIndexOne">
+            <h4>EXPENSE HISTORY</h4>
+            <p><strong>Displaying all the expenses of your pets</strong></p>
+        </div>
+
+        <div class="sessionIndexTwo">
+           <table class= "table table-striped">
+            <thead class="tableHeader">
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Service type</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Pet</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Amount($)</th>
+                </tr>
+            </thead>
+            <tbody class="tableBody">
+                {% for row in rows %}
+                <tr>
+                    <td scope="row">{{row.expense_date}}</td>
+                    <td scope="row">{{row.type}}</td>
+                    <td scope="row">{{row.category}}</td>
+                    <td scope="row">{{row.name}}</td>
+                    <td scope="row">{{row.description}}</td>
+                    <td scope="row">{{row.amount}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+           </table>
+        </div>
+
+        <div class="sessionTotal">
+            <table>
+                <tbody>
+                    <tr>
+                        <td id= 'totalLable' scope="row"><strong>TOTAL:</strong></td>
+                        <td id='Total' scope="rows"><strong>{{totalDisplay}}</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+{% endblock %}

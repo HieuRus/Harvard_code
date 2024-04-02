@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Cash
+{% endblock %}
+
+{% block main %}
+    <form action="/addCash" method="post">
+        <div class="sessionAddCashOne">
+            <h4>ADD CASH</h4>
+            <p>Enter the amount of cash you want to add to your account</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="addCashLabel">Available Cash:</td>
+                        <td class="addCashValue"><strong>{{cashDisplay}}</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="sessionAddCashTwo">
+            <label for="amountOfCash" class="label">Amount of cash:</label>
+            <input class="shr" name="addCash" autocompleted="off" type="text">
+        </div>
+            <button class="btn btn-primary" type="submit">Add Cash</button>
+    </form>
+{% endblock %}

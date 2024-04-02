@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+        <div class="sessionIndexOne">
+            <h4>STOCK HISTORY</h4>
+            <p>Displaying all your stock transactions</p>
+        </div>
+
+        <div class="sessionIndexTwo">
+           <table class= "table table-striped">
+            <thead class="tableHeader">
+                <tr>
+                    <th scope="col">Transaction Time</th>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Buy or Sell</th>
+                    <th scope="col">Shares</th>
+                    <th scope="col">Transaction Price</th>
+                </tr>
+            </thead>
+            <tbody class="tableBody">
+                {% for historyRow in historyRows %}
+                    <tr>
+                        <td scope="row">{{historyRow.transaction_date}}</td>
+                        <td scope="row">{{historyRow.symbol}}</td>
+                        <td scope="row">{{historyRow.name}}</td>
+                        {% if historyRow.is_buy == 1 %}
+                            <td> Buy </td>
+                        {% else %}
+                            <td> Sell </td>
+                        {% endif %}
+                        <td scope="row">{{historyRow.numbers_of_share}}</td>
+                        <td scope="row">{{historyRow.transaction_price}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+           </table>
+        </div>
+
+        <div class="sessionIndexThree">
+            <table class="summary">
+                <tbody>
+                    <tr>
+                        <td class="cashLabel"><strong>Available Cash:</strong></td>
+                        <td class="cashValue"><strong>{{displayCash}}</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+{% endblock %}

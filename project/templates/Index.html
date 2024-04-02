@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Pet Porfolio
+{% endblock %}
+
+{% block main %}
+        <div class="sessionIndexOne">
+            <h4>PET PORTFOLIO</h4>
+            <p><strong>Displaying all your pets</strong></p>
+        </div>
+
+        <div class="sessionIndexTwo">
+           <table class= "table table-striped">
+            <thead class="tableHeader">
+                <tr>
+                    <th scope="col">Pet Name</th>
+                    <th scope="col">Pet Type</th>
+                    <th scope="col">Date Of Birth</th>
+                    <th scope="col">Sex</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Note</th>
+                </tr>
+            </thead>
+            <tbody class="tableBody">
+                {% for row in rows %}
+                <tr>
+                    <td scope="row">{{row.name}}</td>
+                    <td scope="row">{{row.type}}</td>
+                    <td scope="row">{{row.date_of_birth}}</td>
+                    <td scope="row">{{row.sex}}</td>
+                    <td scope="row">{{row.age}}</td>
+                    <td scope="row">{{row.notes}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+           </table>
+        </div>
+{% endblock %}

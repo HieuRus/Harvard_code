@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(5,10,30,0.7), rgba(5,10,30,0.7)), url(images/courtyard.bmp);
+    background-position: center, center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li a:hover{
+    border-bottom: 1px solid red;
+    transition: 0.5s;
+}
+
+.mid-content{
+    width: 90%;
+    top: 40%;
+    left: 50%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.mid-content h1{
+    font-size: 50px;
+}
+
+.mid-content p{
+    font-size: 17px;
+}
+
+.visited:hover{
+    text-decoration: none;
+    color: #ff7256;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .mid-content h1{
+        font-size: 20px;
+    }
+
+    .mid-content p{
+        font-size: 12px;
+    }
+
+    .mid-content a{
+        font-size: 11px;
+    }
+
+    .nav-links ul li{
+        display: block;
+        display: 11px;
+    }
+
+    .nav-links ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: #EE6A50;;
+        height: 100vh;
+        width: 150px;
+        text-align: left;
+        top: 0px;
+        right:0px;
+        z-index: 2;
+        visibility: hidden;
+    }
+
+    nav .fa{
+        display: block;
+        color: white;
+    }
+
+    .aboutHeader{
+        height: 20vh;
+    }
+
+    .divided h4{
+        font-size: 0.5cm;
+    }
+
+    .divided p{
+        font-size: 0.28cm;
+    }
+
+    #e-column h4{
+        font-size: 0.5cm;
+    }
+
+    #e-column p{
+        font-size: 0.28cm;
+    }
+
+    #w-column h4{
+        font-size: 0.5cm;
+    }
+
+    #w-column p{
+        font-size: 0.28cm;
+    }
+
+    .footer h5{
+        font-size: 0.4cm;
+    }
+
+    .footer h6{
+        font-size: 0.4cm;
+    }
+
+    .table{
+        font-size: 0.3cm;
+    }
+
+
+}
+
+/*---------FOOTER------------*/
+.footer{
+    background: #333300;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
+
+.footer h5{
+    color: white;
+    text-align: center;
+}
+
+.footer h6{
+    color: white;
+    text-align: center;
+}
+
+/*-----------ABOUT ME PAGE-----*/
+
+.aboutHeader{
+    height: 40vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(5,10,30,0.7), rgba(5,10,30,0.7)), url(images/tower.bmp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.Self{
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.divided{
+    text-align: center;
+}
+
+.divided h4{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom:1px;
+    color: #1e20ff;
+}
+
+.row{
+    margin-top: 1%;
+    text-align: center;
+}
+
+#e-column{
+    text-align: center;
+}
+
+#e-column h4{
+    color: #1e20ff;
+}
+
+#w-column{
+    text-align: center;
+    margin-top: 0.5%;
+    padding-bottom: 3%;
+}
+
+#w-column h4{
+    color: #1e20ff;
+}
+
+/*-----------MY HOBBY-----*/
+
+.table{
+    width: 39%;
+    margin: 0 auto;
+    border: 1px solid;
+    text-align: center;
+}

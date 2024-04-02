@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Porfolio
+{% endblock %}
+
+{% block main %}
+        <div class="sessionIndexOne">
+            <h4>STOCK PORFOLIO</h4>
+            <p>Displaying all your stocks</p>
+        </div>
+
+        <div class="sessionIndexTwo">
+           <table class= "table table-striped">
+            <thead class="tableHeader">
+                <tr>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Shares</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">TOTAL</th>
+                </tr>
+            </thead>
+            <tbody class="tableBody">
+                {% for row in rows %}
+                    <tr>
+                        <td scope="row">{{row.symbol}}</td>
+                        <td scope="row">{{row.name}}</td>
+                        <td scope="row">{{row.total_shares}}</td>
+                        <td scope="row">{{row.price}}</td>
+                        <td scope="row">{{row.totalPrice}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+           </table>
+        </div>
+
+        <div class="sessionIndexThree">
+            <table class="summary">
+                <tbody>
+                    <tr>
+                        <td class="cashLabel"><strong>Cash:</strong></td>
+                        <td class="cashValue">{{displayCash}}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="totalLabel"><strong>GRAND TOTAL:</strong></td>
+                        <td class="totalValue">{{grandTotalDisplay}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+{% endblock %}

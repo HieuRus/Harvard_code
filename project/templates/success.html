@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Announce adding action successfully
+{% endblock %}
+
+{% block main %}
+    <form class="sendSuccess" action="/success" method = "post">
+        <p class="info"><strong>ADDED SUCCESSFULLY</strong></p>
+
+        <p>Your added pet will be displayed at <strong>Pet Portfolio page</strong></p>
+
+        <p>Added pet type, service type, category type will be appeared at <strong>drop down after adding</strong></p>
+
+        <p>Your added expense will be displayed at Expense History. Please click on <a href="/expenseHistory">this link</a> or navigate tab <strong>Expense History</strong></p>
+
+        <button class="btn btn-primary" type="submit">Back To Pet Portfolio</button>
+    </form>
+{% endblock %}

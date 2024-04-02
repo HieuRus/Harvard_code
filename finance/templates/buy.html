@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <form action="/buy" method="post">
+        <div class="sessionBuyOne">
+            <h4>BUY STOCK</h4>
+            <p>Enter symbol and numbers of shares you want to buy</p>
+            <label for="symbol" class="label">Symbol:</label>
+            <input class= "sym" name="symbol" type="text" autocompleted="off" placeholder="SYMB">
+        </div>
+
+        <div class="sessionBuyTwo">
+            <label for="numbersOfShare" class="label">Numbers of share:</label>
+            <input class="shr" name="shares" autocompleted="off" type="text">
+        </div>
+            <button class="btn btn-primary" type="submit">Buy</button>
+
+        <div class="sessionBuyThree">
+            <div class="buyCashLabel">Your available cash balance:</div>
+            <div class="buyCashValue"><strong>{{cashDisplay}}</strong></div>
+        </div>
+    </form>
+{% endblock %}

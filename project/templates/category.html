@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Pet Category
+{% endblock %}
+
+{% block main %}
+    <form action="/addCategory" method="post">
+        <div class="divOnePict">
+            <h2>Add Category</h2>
+        </div>
+
+        <h5 class="para">Available pet categories in the system</h5>
+
+        <div class="divTwoCategory">
+            <select class="availableServiceType" name="serviceType" id="availableServiceType" onchange="popCategories({{categories}})">
+                <option disabled selected>Pet Service type</option>
+                {% for item in serviceTypes%}
+                <option value="{{item.id}}">{{item.type}}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="divTwoCategory">
+            <select class="availableCategory" id="availableCategory" name="category">
+                <option disabled selected >Pet Category</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <p>Don't see the pet category you want in the above drop down list, please add</p>
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="petCategory" name="petCategory" placeholder="Pet Category" type="text">
+        </div>
+       <button class="btn btn-primary" type="submit">ADD</button>
+    </form>
+{% endblock %}

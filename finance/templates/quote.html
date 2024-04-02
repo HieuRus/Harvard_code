@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="sessionQuoteOne">
+            <h4>STOCK QUOTE</h4>
+            <p>Enter stock symbol which you want to get the quote</p>
+            <input class= "sym" name="symbol" type="text" autocompleted="off" placeholder="SYMB">
+            <button class="btn btn-primary" type="submit">Get Quote</button>
+        </div>
+
+        <div class="sessionQuoteTwo">
+            <h4>Quote In Details</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Symbol</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if result %}
+                    <tr>
+                        <td>{{result['symbol']}}</td>
+                        <td>{{result['name']}}</td>
+                        <td>{{result['price'] | usd}}</td>
+                    </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </form>
+{% endblock %}

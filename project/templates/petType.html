@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Pet Type
+{% endblock %}
+
+{% block main %}
+    <form action="/addPetType" method="post">
+            <div class="divOne">
+                <h2>Add Pet Type</h2>
+            </div>
+            <div class="divTwo">
+                <h5>Available pet types in the system</h5>
+                <select class="availablePetType">
+                    <option disabled selected >Pet types</option>
+                    {% for item in defaultPetType %}
+                     <option value="{{item.type}}">{{item.type}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <p>Don't see the pet type you want in the above drop down list, please add</p>
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="petType" name="petType" placeholder="Pet Type" type="text">
+            </div>
+        <button class="btn btn-primary" type="submit">ADD</button>
+    </form>
+{% endblock %}

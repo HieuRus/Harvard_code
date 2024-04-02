@@ -1,0 +1,267 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+.para{
+    padding: 2mm;
+    color: #EE6A50;
+}
+
+.label{
+    padding: 1.7mm;
+}
+
+.divTwo Input{
+    margin-bottom: 15px;
+    margin-left: 59px;
+    border-radius: 5px;
+    border-color: #1E90FF;
+}
+
+.divOne Input{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 59px;
+    border-color: #1E90FF;
+}
+
+.divOne label{
+    padding-right: 7px;
+
+}
+
+.divThree Input{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-color: #1E90FF;
+}
+
+.sessionQuoteOne h4{
+    color: #008000;
+}
+
+.sessionQuoteOne p{
+    color: #1E90FF;
+}
+
+.sessionQuoteOne Input{
+    border-radius: 5px;
+    border-color: #1E90FF;
+    width: 200px;
+    height: 36px;
+    margin-right: 13px;
+}
+
+.sessionQuoteTwo{
+    margin-top: 40px;
+}
+
+.sessionQuoteTwo h4{
+    color: #008000;
+}
+
+.sessionBuyOne h4{
+    color: #008000;
+}
+
+.sessionBuyOne p{
+    color: #1E90FF;
+}
+
+.sessionBuyOne input{
+    border-radius: 5px;
+    margin-bottom: 6px;
+    margin-left: 70px;
+    border-color: #1E90FF;
+}
+
+.sessionBuyTwo Input{
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-color: #1E90FF;
+}
+
+.btn btn-primary{
+    padding-bottom: 70px;
+    margin-bottom: 100px;
+}
+
+.sessionBuyThree {
+    display: table;
+    width:300px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.sessionBuyThree .buyCashLabel {
+    display: table-cell;
+}
+
+.sessionBuyThree .buyCashValue {
+    display: table-cell;
+    padding-left: 5px;
+    color:  #008000;
+}
+
+.sessionIndexOne h4{
+    color: #008000;
+}
+
+.sessionIndexOne p{
+    color: #1E90FF;
+}
+
+.sessionIndexTwo .tableHeader th{
+    font-size: 20px;
+}
+
+.sessionIndexThree .summary .cashLabel{
+    display: table-cell;
+    font-size: 21px;
+    color:  #008000;
+}
+
+.sessionIndexThree .summary .cashValue{
+    display: table-cell;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.sessionIndexThree .summary .totalLabel{
+    display: table-cell;
+    font-size: 19px;
+    color:  #008000;
+}
+
+.sessionIndexThree .summary .totalValue{
+    display: table-cell;
+    font-size: 18px;
+    padding-left: 6px;
+}
+
+.summary {
+    width: auto;
+    margin-right: 100px;
+    margin-left: auto;
+}
+
+.sessionIndexThree .summary .cashLabel{
+    padding-right: 10px;
+}
+
+.sessionIndexThree .summary .totalLabel{
+    padding-right: 90px;
+}
+
+.sessionSellOne h4{
+    color: #008000;
+}
+
+.sessionSellOne p{
+    color: #1E90FF;
+}
+
+.sessionSellOne label{
+    margin-right: 12px;;
+
+}
+
+.sessionSellOne select{
+    margin-bottom: 6px;
+    margin-left: 60px;
+    border-color: #1E90FF;
+    width: 180px;
+}
+
+.sessionSellTwo Input{
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-color: #1E90FF;
+}
+
+.btn btn-primary{
+    padding-bottom: 70px;
+    margin-bottom: 100px;
+}
+
+.sessionSellThree {
+    display: table;
+    width:300px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.sessionSellThree .sellCashLabel {
+    display: table-cell;
+}
+
+.sessionSellThree .sellCashValue {
+    display: table-cell;
+    padding-left: 5px;
+    color:  #008000;
+}
+
+.sessionAddCashOne h4{
+    color: #008000;
+}
+
+.sessionAddCashOne p{
+    color: #1E90FF;
+}
+
+.sessionAddCashOne {
+    display: table;
+    width:500px;
+    margin: 0 auto;
+}
+
+.sessionAddCashOne .addCashLabel {
+    float: left;
+    margin-left: 92px;
+
+}
+
+.sessionAddCashOne .addCashValue {
+    margin-left: 40px;
+    float: right;
+    color:  #008000;
+}
+
+.sessionAddCashTwo Input{
+    border-radius: 5px;
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    border-color: #1E90FF;
+}
+
+.btn btn-primary{
+    padding-bottom: 70px;
+    margin-bottom: 100px;
+}
+
+.info{
+    color:  #008000;
+    font-size: 40px;
+}
+

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Announce adding cash successfully
+{% endblock %}
+
+{% block main %}
+    <form action="/success" method = "post">
+        <p class="info">CASH ADDED SUCCESSFULLY</p>
+        <p>The cash added will be reflected on Porfolio page</p>
+        <button class="btn btn-primary" type="submit">Back To Portfolio</button>
+    </form>
+{% endblock %}

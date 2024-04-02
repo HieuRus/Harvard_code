@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script language = "JavaScript">
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+                //function show feedback to user Part1
+                document.querySelector('#st').addEventListener('click', feedbackPart1_incorrect);
+                document.querySelector('#mh').addEventListener('click', feedbackPart1_incorrect);
+                document.querySelector('#eh').addEventListener('click', feedbackPart1_incorrect);
+                document.querySelector('#fz').addEventListener('click', feedbackPart1_incorrect);
+                document.querySelector('#pv').addEventListener('click', feedbackPart1_incorrect);
+
+                // function show feedback to user Part2 {
+                document.querySelector('#checkAnswer').addEventListener('click', Feeback_Part2 )
+            }
+        )
+
+        function feedbackPart1_incorrect(clickedButton){
+            //console.log(clickedButton);
+            var el = document.getElementById(clickedButton.id);
+            if (el) {
+                resetButtons();
+                el.style.backgroundColor = "red";
+                document.querySelector('#feedbackToUser_Part1').innerHTML = "Incorrect";
+                document.querySelector('#feedbackToUser_Part1').style.color = "red";
+            }
+        }
+
+        function feedbackPart1_correct() {
+            resetButtons()
+            document.querySelector('.correct').style.backgroundColor = "green"
+            document.querySelector('#feedbackToUser_Part1').innerHTML = "Correct!";
+            document.querySelector('#feedbackToUser_Part1').style.color = "black";
+        }
+
+        function Feeback_Part2(){
+            var userInput = document.querySelector('#userReply');
+            if (userInput.value.toLowerCase() == "switzerland"){
+                userInput.style.backgroundColor = "green"
+                document.querySelector('#feebackToUser_Part2').innerHTML = "Correct!"
+                document.querySelector('#feebackToUser_Part2').style.color = "black"
+            }
+            else{
+                userInput.style.backgroundColor = "red"
+                document.querySelector('#feebackToUser_Part2').innerHTML = "Incorrect"
+                document.querySelector('#feebackToUser_Part2').style.color = "red"
+            }
+            }
+
+        function resetButtons () {
+            var inButtons = document.querySelectorAll('.incorrect');
+            var cButton = document.querySelector('.correct');
+            for(inButton of inButtons) {
+                if(inButton.style.backgroundColor == "red") {
+                    inButton.style.backgroundColor = "";
+                }
+            }
+            if(cButton.style.backgroundColor == "green") {
+                cButton.style.backgroundColor = "";
+            }
+        }
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Who is the author of the heroic novel 'Old Man and the Sea'?</h3>
+                <p id = "feedbackToUser_Part1"></p>
+                <button onclick="feedbackPart1_incorrect(this)" id="st" class="incorrect" type="submit"><b>Santiago</b></button>
+                <button onclick="feedbackPart1_incorrect(this)" id="mh" class="incorrect" type="submit"><strong>Mauritz Hugo</strong></button>
+                <button onclick="feedbackPart1_correct()" id="eh" class="correct" type="submit"><b>Ernest Hemingway</b></button>
+                <button onclick="feedbackPart1_incorrect(this)" id="fz" class="incorrect" type="submit"><b>Fred Zinnemann</b></button>
+                <button onclick="feedbackPart1_incorrect(this)" id="pv" class="incorrect" type="submit"><strong>Peter Viertel</strong></button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                 <!-- TODO: Add free response question here -->
+                <h3>In which country is it not allow to keep alone animals such as parrots, rabbits?</h3>
+                <p id = "feebackToUser_Part2"></p>
+                <input id = "userReply" type = "text"/>
+                <button onclick = "Feeback_Part2()"  id = "checkAnswer" type = "submit"><b>Check Answer</b></button>
+            </div>
+        </div>
+    </body>
+</html>

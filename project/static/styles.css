@@ -1,0 +1,524 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* LAYOUT */
+.container-fluid img{
+    width: 105px;
+}
+
+.navbar-custom {
+    background-color: lightblue;
+}
+
+.nav-link{
+    color: #9146FF;
+}
+
+.nav-link:hover{
+    color: #FF7256;
+}
+
+
+/* LOG IN PAGE */
+.divOneLogin{
+    height: 60vh;
+    width: 100%;
+    background-image: url(image/groupPetsOne.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.divOneLogin h2{
+    margin: 0;
+    text-align: center;
+    color: #9966FF;
+}
+
+.btn {
+    float: center;
+    margin-left: 0px;
+}
+
+.mb-3 #password{
+    margin-bottom: 15px;
+}
+
+.mb-3 #username{
+    margin-bottom: 15px;
+}
+
+
+/* REGISTER PAGE */
+.divOneRegister{
+    height: 55vh;
+    width: 100%;
+    background-image: url(image/groupPetsTwo.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.divOneRegister h2{
+    margin: 0;
+    text-align: center;
+    color: #9966FF;
+}
+
+.divTwoRegister Input{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 69px;
+    border-color: #1E90FF;
+    margin-top: 20px;
+    height: 40px;
+    width: 250px;
+}
+
+.divThreeRegister Input{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 75px;
+    border-color: #1E90FF;
+    height: 40px;
+    width: 250px;
+}
+
+.divFourRegister Input{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-color: #1E90FF;
+    height: 40px;
+    width: 250px;
+}
+
+
+/* PET TYPE PAGE */
+.divOne{
+    height: 35vh;
+    width: 100%;
+    background-image:url(image/petFly.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.divOne h2{
+    color: #9966FF;
+}
+
+.divTwo h5{
+    margin-top: 30px;
+
+}
+
+.availablePetType{
+    width: 210px;
+    height: 38px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.availablePetType:hover{
+    border-color:#008000;
+    border: bold;
+}
+
+.mb-3 input{
+    margin-bottom: 20px;
+}
+
+
+ /* ADD PET PAGE */
+ .divOnePict{
+    height: 35vh;
+    width: 100%;
+    background-image:url(image/cuteCatOne.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+ }
+
+.divOnePict h2{
+    color: #9966FF;
+}
+
+.divTwo{
+    margin-top: 30px;
+}
+
+.divTwo label{
+    margin-right: 40px;
+}
+
+.divTwo select{
+    margin-bottom: 15px;
+    height: 35px;
+}
+
+.divTwo select:hover{
+    border-color: #008000;
+}
+
+.divThreeAddPet label{
+    margin-right: 35px;
+}
+
+.divThreeAddPet input{
+    width: 210px;
+    height: 35px;
+}
+
+.divThreeAddPet #petName:hover{
+    border-color: #008000;
+
+}
+.divFourAddPet{
+    margin-top: 15px;
+}
+
+.divFourAddPet label{
+    margin-right: 15px;
+}
+
+.divFourAddPet input{
+    width: 210px;
+    height: 35px
+}
+
+.divFourAddPet input:hover{
+    border-color: #008000;
+}
+
+.divFiveAddPet{
+    margin-top: 12px;
+}
+
+.divFiveAddPet label{
+     margin-right: 44px;
+}
+
+.divFiveAddPet #male{
+    margin-left: 32px;
+}
+
+.divSixAddPet{
+    margin-top: 10px;
+}
+
+.divSixAddPet label{
+    margin-right: 28px;
+    padding-right:28px;
+}
+
+.divSixAddPet input{
+    margin-left: 13px;
+    width: 210px;
+    height: 35px;
+    margin-bottom: 12px;
+}
+
+.divSixAddPet input:hover{
+    border-color: #008000;
+}
+
+.btn{
+    margin-top: 12px;
+}
+
+
+/* INDEX PAGE - PET PORTFOLIO */
+.sessionIndexOne h4{
+    color: #9966FF;
+}
+
+.sessionIndexOne p{
+    color: #3CB043;
+    padding-bottom: 18px;
+}
+
+
+/* CATEGORY PAGE */
+.divOnePict{
+    height: 42vh;
+    width: 100%;
+    background-image:url(image/cuteCatOne.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+ }
+
+.availableCategory{
+    width: 210px;
+    height: 38px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.para{
+    margin-top: 30px;
+}
+
+.availableCategory:hover{
+    border-color:#008000;
+    border: bold;
+}
+
+.availableServiceType{
+    width: 210px;
+    height: 38px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.availableServiceType:hover{
+    border-color:#008000;
+    border: bold
+}
+
+.divTwoCategory{
+    margin-top: 10px;
+}
+
+.mb-3 p{
+    border-top: 10px;
+    margin-top: 15px;
+}
+
+.mb-3 #petCategory{
+    margin-bottom: 5px;
+}
+
+.btn-primary{
+    margin-top: 9px;
+}
+
+
+
+/* ADD EXPENSE PAGE */
+.dollardSign{
+    height: 30vh;
+    width: 100%;
+    background-image:url(image/dollarSignTwo.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+ }
+
+.dollardSign h2{
+    color: #9966FF;
+}
+
+.divTwoExpenseA{
+    margin-top: 1px;
+ }
+
+.divTwoExpenseA label{
+    margin-right: 4px;
+    padding-right:4px;
+}
+
+.availablePetTypeEx{
+    width: 210px;
+    height: 38px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+
+ }
+
+.availablePetTypeEx:hover{
+    border-color: #008000;
+    border: bold;
+ }
+
+.divTwoExpenseB{
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+    border-bottom: 1px;
+}
+
+.divTwoExpenseB label{
+    margin-right: 9px;
+    padding-right:9px;
+ }
+
+.divTwoExpenseB select{
+    margin-left: 9px;
+    margin-bottom: 8px;
+    padding-left: 9px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.divThreeExpense{
+    margin-top: 4px;
+    padding-top: 4px;
+    border-top; 4px;
+}
+
+.divThreeExpense label{
+    margin-right: 53px;
+    padding-right:34px;
+ }
+
+.divThreeExpense select{
+    width: 210px;
+    height: 35px;
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+}
+
+.divThreeExpense input:hover{
+    border-color: #008000;
+}
+
+.divFourExpense{
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.divFourExpense label{
+    margin-right: 23px;
+    padding-right:21px;
+ }
+
+.divFourExpense textarea:hover{
+    border-color: #008000;
+}
+
+
+.divFiveExpense{
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.divFiveExpense label{
+    margin-right: 17px;
+    padding-right:17px;
+ }
+
+.divFiveExpense input{
+    width: 210px;
+    height: 35px;
+    margin-left: 17px;
+    padding-left: 17px;
+    margin-bottom: 8px;
+}
+
+.divFiveExpense input:hover{
+    border-color: #008000;
+}
+
+.divSixExpense{
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.divSixExpense label{
+    margin-right: 31px;
+    padding-right:31px;
+ }
+
+.divSixExpense input{
+    width: 210px;
+    height: 35px;
+    margin-left: 31px;
+    padding-left: 31px;
+    margin-bottom: 12px;
+}
+
+.divSixExpense input:hover{
+    border-color: #008000;
+}
+
+
+/* EXPENSE HISTORY */
+
+.sessionTotal{
+    float: right;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.sessionTotal #totalLable{
+    padding-right: 10px;
+}
+
+.sessionTotal #total{
+    padding-left: 10px;
+
+}
+
+
+ /* FOOTER */
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 68px;
+    margin: 0 auto;
+}
+
+.footer div{
+    text-align: center;
+}
+
+footer div h5{
+    color: #9146FF;
+    padding: 0.1px;
+}
+
+footer .navbar-brand
+{
+    font-size: x-large;
+}
+
+footer .navbar-brand .blue
+{
+    color: #537fbe;
+}
+
+footer .navbar-brand .red
+{
+    color: #ea433b;
+}
+
+footer .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+
+footer .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+
+ /* THE LEFT OVER */
+.info{
+    color: #339900;
+    font-size: 40px;
+}
+
+.sendSuccess{
+    background-image: url(image/petPaw.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    opacity: 0.8;
+}

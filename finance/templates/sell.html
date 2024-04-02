@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+    <form action="/sell" method="post">
+        <div class="sessionSellOne">
+            <h4>SELL STOCK</h4>
+            <p>Select symbol and numbers of shares you want to sell</p>
+            <label for="symbol" class="label">Symbol:</label>
+            <select name="symbol">
+                <option disabled selected >SYMB</option>
+                {% for item in symbolsInDB %}
+                    <option value="{{item.symbol}}">{{item.symbol}}</option>
+                {% endfor %}
+            </select>
+
+        </div>
+
+        <div class="sessionSellTwo">
+            <label for="numbersOfShare" class="label">Numbers of share:</label>
+            <input class="shr" name="shares" autocompleted="off" type="text">
+        </div>
+            <button class="btn btn-primary" type="submit">Sell</button>
+
+        <div class="sessionSellThree">
+            <div class="sellCashLabel">Your available cash balance:</div>
+            <div class="sellCashValue"><strong>{{cashDisplay}}</strong></div>
+        </div>
+    </form>
+{% endblock %}

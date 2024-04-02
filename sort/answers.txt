@@ -1,0 +1,33 @@
+sort1 uses: Bubble sort
+
+How do you know?:
+-Compare real time, user time when execute sort1, sort2, sort3 on file random5000.txt
+real time: 0m0.100s[sort1], 0m0.027s[sort2], 0m0.063[sort3]
+user time: 0m0.053s[sort1], 0m0.000s[sort2], 0m0.034[sort3]
+
+-Compare real time, user time when execute sort1, sort2, sort3 on file random10000.txt
+real time: 0m0.339s[sort1], 0m0.077s[sort2], 0m0.206s[sort3]
+user time: 0m0.245s[sort1], 0m0.011[sort2], 0m0.114[sort3]
+
+-Compare real time, user time when execute sort1, sort2, sort3 on file reversed5000.txt
+real time: 0m0.081s[sort1], 0m0.050s[sort2], 0m0.056s[sort3]
+user time: 0m0.052s[sort1], 0m0.000s[sort2], 0m0.029s[sort3]
+
+-Compare real time, user time when execute sort1, sort2, sort3 on file reversed50000.txt
+real time: 0m5.418s[sort1], 0m0.753s[sort2], 0m3.134s[sort3]
+user time: 0m4.979s[sort1], 0m0.034s[sort2], 0m2.600s[sort3]
+
+Based on the above comparison, SORT1 took long time more than another two sorts, so I think it is Bubble sort
+
+
+
+sort2 uses: Merge sort
+
+How do you know?: Execute sort1, sort2, sort3 on mutiple .txt files as the above result, compare real time, user time, I saw shortest real time, sor sort2 is Merge sort
+Based on the lesson taught by Professor David, the end of lesson, he run 3 sort the same time to see which sort take less time most [merge sort]
+
+
+sort3 uses: Selection sort
+
+How do you know?: execute sort1, sort2, sort3 on mutiple .txt files as the above result,compare real time, user time, I saw sort3 took longer time than sort2, but less time than sort1,
+so it should be Selection sort.

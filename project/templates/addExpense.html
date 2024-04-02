@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add Expense
+{% endblock %}
+
+{% block main %}
+    <form action="/addExpense" method="post">
+        <form action="/addExpense" method="post">
+            <div class="dollardSign">
+                <h2>Add Expense</h2>
+            </div>
+            <div class="divTwoExpenseA">
+                <label for="serviceType">Pet Service Types:</label>
+                    <select name="serviceType" class="availablePetTypeEx" id="availableServiceType" onchange="popCategories({{categories}})">
+                        <option selected disabled>Select One</option>
+                        {% for item in serviceTypesInDB %}
+                        <option value="{{item.id}}">{{item.type}}</option>
+                        {% endfor %}
+                    </select>
+            </div>
+
+            <div class="divTwoExpenseB">
+                <label for="category">Pet Categories:</label>
+                    <select class="availablePetType" name="category" id="availableCategory">
+                        <option selected disabled>Select One (optional)</option>
+                    </select>
+            </div>
+
+            <div class="divThreeExpense">
+                <label for="petName">Pet:</label>
+                <select name="petName" class="availablePetTypeEx" id="selectedPet">
+                    <option value="NULL">Select One (optional)</option>
+                    {% for item in availablePetsInDB %}
+                    <option value="{{item.id}}">{{item.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="divFourExpense">
+                <label for="description">Description:</label>
+                <textarea name="description" id="description" rows= "3" cols="27" wrap="solf"></textarea>
+
+            </div>
+
+            <div class="divFiveExpense">
+                <label for="amount">Amount($):</label>
+                <input name="amount" type="text" placeholder="Expense">
+            </div>
+
+            <div class="divSixExpense">
+                <label for="date">Date:</label>
+                <input name="date" type="date">
+            </div>
+           <button class="btn btn-primary" type="submit">ADD</button>
+    </form>
+{% endblock %}
